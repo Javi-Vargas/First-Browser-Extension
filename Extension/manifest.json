@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Background Change",
+    "description": "Changes the Background of any google related site. To be an Akatsuki Cloak Pattern.",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/icon16.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/icon16.png",
+            "48": "/images/icon48.png",
+            "128": "/images/icon128-2.png"
+        }
+    },
+    "content_scripts": [{
+       "matches": ["https://www.google.com/*"],
+       "css": ["main.css"] 
+    }]
+}
